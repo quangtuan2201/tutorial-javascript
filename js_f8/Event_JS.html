@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!--/*
+Event JS
+vd  : Một trang html đã tải xong
+      Trường nhập html đã đc thay đổi
+      click vào button
+
+ event              mô tả
+ onchange           Một phần tử html đã đc thay đổi
+ onclick            Nguowid dùng nhấp vào một ptu Html
+ onmouseover        Người dùng di chuột qua
+ onlkeydown         user nhấn một phim trên bàn phím
+ onload             Trình duyệt đã tải trang xong
+ * JS event handlers (trình xử lý)
+ 
+ 
+*/-->
+<button onclick="funDate()">The time is?</button>
+
+<p id="demo"></p>
+<script>
+function funDate() {
+ document.getElementById('demo').innerHTML=Date();
+}
+
+</script>
+
+</body>
+</html>

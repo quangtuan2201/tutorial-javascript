@@ -1,0 +1,45 @@
+<!-- Event DOM JS
+     1. Sự kiện Onload và onunload
+        - event onloaf và onumload được kích hoạt khi ng dùng vào hoặc rời khỏi trang
+        - onload có thể dc dử dụng để ktra loạit rình duyện và ohieen bản trinh duyệt của khách truy cập
+        - Các sự kiện onload và onunload có thể đc sử dụng để xử lý cookie 
+     2. Sự kiện onchange
+        - Sự kiện này onchangethường được sử dụng kết hợp với việc xác thực các trường đầu vào
+     3. Sự kiện onmouseover và onmouseout
+        - Các sự kiện onmoouseover và onmouseout có thể đc sd kích hoạt một chức năng khi 
+        ng dùng di chuột qua hoặc rời khỏi ptu HTML
+
+<-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+      
+        #div{
+            height: 50px;
+            background-color: red;
+            
+        }
+    </style>
+
+</head>
+<body>
+<div id="div" onmouseover="mOver(this)" onmouseout="mOut(this)">
+<p id ="param">
+
+</p>
+</div>
+
+<script>
+let content= document.getElementById("param");
+ function mOver(obj) {
+   obj.innerHTML ="cam on"
+ }
+ function mOut(obj) {
+obj.innerHTML = " mouse over me"
+}
+</script>
+    
+</body>
+</html>
